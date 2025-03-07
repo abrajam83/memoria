@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-parallax {
+    background-image: url('../src/assets/foto3.jpg'); /* Cambia esto por la URL de tu imagen */
+    background-size: cover;
+    background-attachment: scroll; /* Esto permite que la imagen se mueva */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    height: 60vh;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
